@@ -1,0 +1,14 @@
+<!-- frontend/public/logo.svg -->
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="26.5" y1="35" x2="216" y2="230" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E78F9"/>
+      <stop offset="1" stop-color="#22A4F4"/>
+    </linearGradient>
+  </defs>
+  <path d="M224 48C224 39.1634 216.837 32 208 32H48C39.1634 32 32 39.1634 32 48V176C32 184.837 39.1634 192 48 192H92L128 224L164 192H208C216.837 192 224 184.837 224 176V48Z" fill="url(#logoGradient)"/>
+  <path d="M128 56C103.18 56 82.0422 93.3188 82.0422 112C82.0422 130.681 103.18 168 128 168" stroke="white" stroke-opacity="0.5" stroke-width="8" stroke-linecap="round"/>
+  <path d="M128 56C152.82 56 173.958 93.3188 173.958 112C173.958 130.681 152.82 168 128 168" stroke="white" stroke-opacity="0.5" stroke-width="8" stroke-linecap="round"/>
+  <path d="M72 136H184" stroke="white" stroke-opacity="0.5" stroke-width="8" stroke-linecap="round"/>
+  <path d="M64 88H192" stroke="white" stroke-opacity="0.5" stroke-width="8" stroke-linecap="round"/>
+</svg>

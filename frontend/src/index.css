@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Define our color palette using CSS variables */
+:root {
+  --font-family: 'Inter', sans-serif;
+  --background-dark: #121212;
+  --container-dark: #1E1E1E;
+  --sidebar-dark: #181818;
+  --border-color: #333333;
+  --primary-blue: #0E78F9;
+  --primary-blue-hover: #0056b3;
+  --text-light: #EAEAEA;
+  --text-muted: #A0A0A0;
+  --my-message-bg: #0E78F9;
+  --peer-message-bg: #3A3A3A;
+  --danger-red: #E53E3E;
+}
+
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-dark);
+  color: var(--text-light);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  height: 100%;
+  width: 100%;
+}
