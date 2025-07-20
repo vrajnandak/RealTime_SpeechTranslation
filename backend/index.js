@@ -134,13 +134,15 @@ io.on('connection', (socket)=>{
               translatedText = `[Translation Error] ${text}`;
           }
         }
-
+        
+        console.log("Sending translated message to", clientSocket.id);
         io.to(clientSocket.id).emit('chat-message', {
           translatedText: translatedText,
           originalText:text,
           senderName: sender.userName,
         });
       }
+      console.log("Message sent to all clients in room");
     } catch(error) {
       console.error('ERROR during v3 translation:', error);
       socket.to(room).emit('chat-message', {
