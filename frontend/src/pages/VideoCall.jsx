@@ -13,7 +13,7 @@ const VideoCall = ({userID, userName, myLanguage, translationLanguage, token})=>
     const { roomCode } = useParams();
     const navigate = useNavigate();
     const [messages, setMessages] = useState([]);
-    const [isTranscribing, setIsTranscribing] = useState(false);
+    const [isTranscribing, setIsTranscribing] = useState(true);
     const recognitionRef = useRef(null);
     const messagesEndRef = useRef(null);
 

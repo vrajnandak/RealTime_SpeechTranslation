@@ -15,7 +15,7 @@ const LandingPage = (props) => {
             <strong>1. Create a Room:</strong> Enter any name for your meeting room.
           </li>
           <li>
-            <strong>2. Select Languages:</strong> Choose the language you will speak and the language your peer needs to hear.
+            <strong>2. Select Languages:</strong> Choose the language you will speak, and the language you want your peer's speech translated into.
           </li>
           <li>
             <strong>3. Share & Join:</strong> Share the room name with your peer so they can join with their own language settings.
