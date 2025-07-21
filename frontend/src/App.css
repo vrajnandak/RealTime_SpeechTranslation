@@ -478,3 +478,93 @@
   background-color: #dc3545; /* Red when active */
   color: white;
 }
+
+.attribution-footer {
+  margin-top: 2.5rem; /* Add some space above the footer */
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color); /* A subtle separator line */
+  text-align: center; /* Center the text */
+}
+
+.attribution-footer p {
+  font-size: 0.9rem;
+  color: var(--text-muted); /* Use the muted text color for a subtle look */
+  font-style: italic;
+}
+
+/* --- NEW: Custom Select Dropdown Styles --- */
+
+/* The main container for the custom select */
+.custom-select-container {
+  position: relative;
+  width: 100%;
+  font-family: var(--font-family);
+}
+/* Style for when the component is disabled */
+.custom-select-container[data-disabled="true"] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* The box that shows the currently selected value */
+.custom-select-value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--background-dark);
+  color: var(--text-light);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.custom-select-value:hover {
+  border-color: #666;
+}
+
+/* The little dropdown arrow icon */
+.arrow {
+  border: solid var(--text-muted);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+}
+.arrow.open {
+  transform: rotate(-135deg);
+}
+
+/* The scrollable list of options */
+.custom-select-options {
+  position: absolute;
+  top: 105%;
+  left: 0;
+  width: 100%;
+  background-color: var(--container-dark);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  list-style: none;
+  z-index: 100;
+  /* THE FIX: This creates the scrollable window for the options */
+  max-height: 180px; /* Approx. 5 items * 36px/item */
+  overflow-y: auto;
+}
+
+/* Styling for each individual option in the list */
+.custom-select-option {
+  padding: 10px 14px;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.2s ease;
+}
+.custom-select-option:hover {
+  background-color: var(--primary-blue-hover);
+}
+.custom-select-option.selected {
+  background-color: var(--primary-blue);
+  font-weight: 500;
+}

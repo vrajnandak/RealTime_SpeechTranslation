@@ -24,6 +24,7 @@ const LandingPage = (props) => {
             <strong>4. Speak Freely:</strong> Your speech is automatically transcribed and translated, appearing live in the chat sidebar for your peer to read.
           </li>
         </ul>
+
       </div>
 
       {/* --- Right Column: The Lobby Form --- */}

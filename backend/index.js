@@ -103,7 +103,7 @@ io.on('connection', (socket)=>{
       console.log(`Message from ${sender.userName}: "${text}"`);
 
       const clientsInRoom = await io.in(room).fetchSockets();
-      console.log("Number of clients in the room:", clientsInRoom);
+      // console.log("Number of clients in the room:", clientsInRoom);
       for(const clientSocket of clientsInRoom)
       {
         if(clientSocket.id===socket.id) continue;

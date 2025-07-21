@@ -3,10 +3,10 @@ import { useParams, useNavigate } from 'react-router-dom';
 import AgoraUIKit from 'agora-react-uikit';
 import io from 'socket.io-client';
 
-const backendURL = import.meta.env.VITE_RENDER_URL || "https://trilogy-r2-speechtranslationtool.onrender.com";
+const backendURL = import.meta.env.VITE_RENDER_URL;
 const socket = io(backendURL);
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-const appID = import.meta.env.VITE_AGORA_APP_ID || '727d7f73388c4d24a74e21d3151c87f6';
+const appID = import.meta.env.VITE_AGORA_APP_ID;
 
 
 const VideoCall = ({userID, userName, myLanguage, translationLanguage, token})=>{
@@ -16,8 +16,6 @@ const VideoCall = ({userID, userName, myLanguage, translationLanguage, token})=>
     const [isTranscribing, setIsTranscribing] = useState(false);
     const recognitionRef = useRef(null);
     const messagesEndRef = useRef(null);
-
-    console.log("In Video Call, env variables having values:", backendURL, " and", appID);
 
     // Effect to auto-scroll the chat
     useEffect(() => {
