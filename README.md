@@ -4,7 +4,9 @@
 
 Break language barriers with real-time, translated video conversations. Lingua Live is a web application that allows multiple users to join a video call and communicate seamlessly, even if they don't speak the same language.
 
-**Test It Yourself:** [**https://timely-fox-dcd3d7.netlify.app**](https://speechtranslationtask1finalround.netlify.app)
+**Test It Yourself:** 
+- Cloud-Translation API used:[**https://timely-fox-dcd3d7.netlify.app**](https://speechtranslationtask1finalround.netlify.app)
+- Browser-SpeechRecognition API used: [**https://speechtranslationtask1finalround.netlify.app**](https://speechtranslationtask1finalround.netlify.app)
 
 ---
 
